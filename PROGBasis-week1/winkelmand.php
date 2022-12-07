@@ -25,7 +25,6 @@ echo 'Prijs: ' . $prijs;
 
 // Controleer of het formulier is verstuurd
 if ($_POST['submit']) {
-
     $product = $_POST['product'];
     $aantal = $_POST['aantal'];
     $min = 0;
@@ -53,7 +52,6 @@ if ($_POST['submit']) {
 
 }
 ?>
-
 
 </body>
 </html>

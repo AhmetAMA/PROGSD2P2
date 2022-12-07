@@ -35,8 +35,10 @@ if (isset($_POST['submit'])) {
      * Voer onderstaande code in het naamveld in en kijk wat er gebeurd
      * <script>alert('Niet beveiligd tegen script-injections')</script>
      */
+
     $script = "<script>alert('Niet beveiligd tegen script-injections')</script>";
     echo $script;
+
     /*
      * OPDRACHT 2:
      * Zorg ervoor dat er geen scripts meer ingevoerd kunnen worden.
@@ -64,6 +66,7 @@ if (isset($_POST['submit'])) {
      * Zorg ervoor dat de naam, straat en woonplaats met een hoofdletter beginnen
      * Hiervoor gebruik je de functie ucfirst()
      */
+
     echo "<br>";
     echo strtoupper( ucfirst($naam));
     echo "<br>";
@@ -74,14 +77,14 @@ if (isset($_POST['submit'])) {
     echo strtoupper( ucfirst($postcode));
     echo "<br>";
     echo strtoupper( ucfirst($woonplaats));
-    
+
     /*
      * OPDRACHT 4:
      * Alle andere letters moeten kleine letters zijn
      * Hiervoor gebruik je de functie strtolower()
      */
+
     echo "<br>";
-       
         echo strtolower(
             $naam . "<br>" .
             $straat . "<br>" .
@@ -89,7 +92,7 @@ if (isset($_POST['submit'])) {
             $postcode . "<br>" .
             $woonplaats . "<br>" 
         );
-        
+
     /*
      * OPDRACHT 5:
      * Check of het ingevoerde huisnummer werkelijk een nummer is.
