@@ -79,3 +79,4 @@ for($i = 6; $i < $size; ++$i){
  * Gebruik de functie array_reverse om hetzelfde resultaat als in opdracht 4 te verkrijgen.
  */
 
+array_reverse(weekdagen);
