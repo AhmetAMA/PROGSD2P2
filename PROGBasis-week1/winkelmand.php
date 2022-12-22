@@ -27,18 +27,18 @@ echo 'Prijs: ' . $prijs;
 if ($_POST['submit']) {
     $product = $_POST['product'];
     $aantal = $_POST['aantal'];
-    $min = 0;
-    $max = 15;
+    $minimaal = 0;
+    $maximaal = 13;
 
     // Controleer of het aantal > 0 is.
-    if ($aantal < $min) { 
+    if ($aantal < $minimaal) { 
         echo "je moet minimaal 1 stuk hebben";
         // Maak de berekening van de totaal prijs.
         // Maak de teksten zoals gevraagd wordt.
 
     }
-    if($aantal > $max){
-        echo "maximaal moet je 15 hebben";
+    if($aantal > $maximaal){
+        echo "maximaal moet je 13 hebben";
     }else{
         echo $aantal . "\n" . $product . "\n" . $prijs;
     }

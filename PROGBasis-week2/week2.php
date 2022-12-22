@@ -66,8 +66,8 @@ foreach($weekdagen as $dagen => $dag){
 
 echo "<br>";
 echo "<br>";
-echo "<br>";
-echo "dit is sizeof() in een for loop";
+echo "dit is sizeof() in een for loop";echo "<br>";
+
 echo "<br>";
 $size = sizeof($weekdagen); 
 for($i = 6; $i < $size; ++$i){
@@ -79,4 +79,4 @@ for($i = 6; $i < $size; ++$i){
  * Gebruik de functie array_reverse om hetzelfde resultaat als in opdracht 4 te verkrijgen.
  */
 
-array_reverse(weekdagen);
+array_reverse($weekdagen);
